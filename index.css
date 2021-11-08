@@ -5,19 +5,25 @@
     text-decoration: none;
 }
 
+body{
+    background: #ccc;
+}
+
+
 .brand{
     background-color: rgb(78, 78, 252);
     position: relative;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .bx-menu{
     position: absolute;
-    left: 50vh;
+    left: 1vh;
     top: 5px;
     font-size: 30px;
-    color: blue;
+    color: white;
     cursor: pointer;
-
 }
 
 .bxs-x-circle{
@@ -29,17 +35,18 @@
 }
  
  .sidebar{
-     background-color: rgb(33, 33, 224);
-     height: 100%;
+     background-color:rgb(95, 118, 221);
+     height: 100vh;
      width: 280px;
-     position: fixed;
-     z-index: 1;
-       
+     position: absolute;
+     z-index: 3;
+     top: 0;
+   
  }
 
-.sidebar.active{
-    background-color: red;
-}
+ .inactive{
+     left: -400px;
+ }
 
 
  .sidebar ul li a{
@@ -58,16 +65,49 @@
      padding-left: 50px;
  }
 
-
-
-
- .sidebar ul{
+.sidebar ul{
     list-style: none;
     list-style: none;
     text-decoration: none;
     padding-left: 0;
  }
 
+
  li .bx {
      padding-right: 20px;
  }
+
+
+ .bar {
+     background-color: rgb(95, 118, 221);
+     height: 40px;
+     width: 100%;
+     position: absolute;
+     z-index: 1;
+ }
+
+ .brand1 {
+     position: fixed;
+     top: 5px;
+     left: 50px;
+     font-size: 20px;
+     z-index: 1;
+     color: white;
+ }
+
+ .backdrop {
+    height: 100vh;
+    background: rgb(165, 164, 164);
+    /* position: fixed;
+    top: 0;
+    left: 0;  */
+    z-index: 2 ;
+    opacity: 0;
+    display: none;
+ }
+
+ .show{
+     opacity: 1;
+     display: block;
+ }
+
